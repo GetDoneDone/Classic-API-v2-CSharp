@@ -858,9 +858,7 @@ namespace DoneDone.APIV2WrapperCSharp
 
             return api(url, RequestMethods.GET);
         }
-
-        // Activity
-
+        
         public string GetActivityForIssuesWaitingOnYouForProject(int project_id, List<long> tag_ids = null, DateTime? start_due_date = null, DateTime? end_due_date = null,
             DateTime? from_date = null, DateTime? until_date = null, double hours_from_utc = 0, short? issue_creation_type = null, int? skip = null, int? take = null)
         {
@@ -956,8 +954,6 @@ namespace DoneDone.APIV2WrapperCSharp
 
             return api(url, RequestMethods.GET);
         }
-
-        // global activity
 
         public string GetActivityForIssuesWaitingOnYou(List<int> project_ids, List<long> tag_ids = null, DateTime? start_due_date = null, DateTime? end_due_date = null,
             DateTime? from_date = null, DateTime? until_date = null, double hours_from_utc = 0, short? issue_creation_type = null, int? skip = null, int? take = null)
