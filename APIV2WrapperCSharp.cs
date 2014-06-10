@@ -503,6 +503,13 @@ namespace DoneDone.APIV2WrapperCSharp
             return api(url, RequestMethods.GET);
         }
 
+        public string GetPeopleInProject(int project_id)
+        {
+            string url =  string.Format("projects/{0}/people.json", project_id);
+            return api(url, RequestMethods.GET);
+        }
+
+
         public string GetProject(int project_id)
         {
             string url = string.Format("projects/{0}.json", project_id);
@@ -628,6 +635,12 @@ namespace DoneDone.APIV2WrapperCSharp
         public string GetReleaseBuildsForProject(int project_id)
         {
             string url = string.Format("projects/{0}/release_builds.json", project_id);
+            return api(url, RequestMethods.GET);
+        }
+
+        public string GetReleaseBuildsInfoForProject(int project_id)
+        {
+            string url = string.Format("projects/{0}/release_builds/info.json", project_id);
             return api(url, RequestMethods.GET);
         }
 
