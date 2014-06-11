@@ -50,7 +50,7 @@ namespace DoneDone.APIV2WrapperCSharp
         public IssueTracker(string subdomain, string username, string passwordOrAPIToken)
         {
             auth = Convert.ToBase64String(Encoding.Default.GetBytes(string.Format("{0}:{1}", username, passwordOrAPIToken)));
-            baseURL = string.Format("http://{0}.mydonedone.com/issuetracker/api/v2/", subdomain);
+            baseURL = string.Format("https://{0}.mydonedone.com/issuetracker/api/v2/", subdomain);
         }
          
         #endregion
