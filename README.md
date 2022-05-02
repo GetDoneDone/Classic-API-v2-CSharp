@@ -1,4 +1,4 @@
-api-v2-csharp
+DoneDone Classic API v2 C# Wrapper
 =============
 
 A C# class that wraps the DoneDone V2 API.
